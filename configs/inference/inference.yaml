@@ -1,5 +1,4 @@
 unet_additional_kwargs:
-  use_inflated_groupnorm: true
   unet_use_cross_frame_attention: false
   unet_use_temporal_attention: false
   use_motion_module: true
@@ -18,7 +17,7 @@ unet_additional_kwargs:
     - Temporal_Self
     - Temporal_Self
     temporal_position_encoding: true
-    temporal_position_encoding_max_len: 32
+    temporal_position_encoding_max_len: 24
     temporal_attention_dim_div: 1
 
 noise_scheduler_kwargs:

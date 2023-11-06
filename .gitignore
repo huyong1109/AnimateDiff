@@ -1,6 +1,7 @@
 wandb/
 debugs/
 outputs/
+output/
 samples/
 __pycache__/
 ossutil_output/
@@ -23,3 +24,6 @@ models/StableDiffusion/*
 !models/DreamBooth_LoRA/*.txt
 !models/MotionLoRA/
 !models/MotionLoRA/*.txt
+
+*.out
+*.log

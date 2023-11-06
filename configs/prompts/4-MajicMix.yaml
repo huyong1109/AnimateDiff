@@ -1,23 +1,23 @@
 MajicMix:
+  base: ""
+  path: "models/DreamBooth_LoRA/majicmixRealistic_betterV2V25.safetensors"
   motion_module:
     - "models/Motion_Module/mm_sd_v14.ckpt"
     - "models/Motion_Module/mm_sd_v15.ckpt"
-
-  dreambooth_path: "models/DreamBooth_LoRA/majicmixRealistic_v5Preview.safetensors"
-  lora_model_path: ""
 
   seed:           [1572448948722921032, 1099474677988590681, 6488833139725635347, 18339859844376517918]
   steps:          25
   guidance_scale: 7.5
 
   prompt:
-    - "1girl, offshoulder, light smile, shiny skin best quality, masterpiece, photorealistic"
-    - "best quality, masterpiece, photorealistic, 1boy, 50 years old beard, dramatic lighting"
-    - "best quality, masterpiece, photorealistic, 1girl, light smile, shirt with collars, waist up, dramatic lighting, from below"
-    - "male, man, beard, bodybuilder, skinhead,cold face, tough guy, cowboyshot, tattoo, french windows, luxury hotel masterpiece, best quality, photorealistic"
+    # - "1girl, offshoulder, light smile, shiny skin best quality, masterpiece, photorealistic"
+    # - "best quality, masterpiece, photorealistic, 1boy, 50 years old beard, dramatic lighting"
+    # - "best quality, masterpiece, photorealistic, 1girl, light smile, shirt with collars, waist up, dramatic lighting, from below"
+    # - "male, man, beard, bodybuilder, skinhead,cold face, tough guy, cowboyshot, tattoo, french windows, luxury hotel masterpiece, best quality, photorealistic"
+    - "Her hair was dark brown and in a natural wavy shape, slightly down her shoulder. She has a beautiful oval face and fair skin. Bright and deep blue eyes twinkled with wisdom and curiosity. Her nose was small and straight, slightly upturned. Her lips were red and full, slightly raised, friendly and warm. She wore an elegant white dress that highlighted her slim figure and smooth lines. Her posture was confident and elegant, and she smiled and talked to the people in the cafe, radiating a charming charm,by Ivan Shishkin, in a symbolic and meaningful style, Ray Tracing Reflections, Bright, Excited, Ultra-HD, 5D, Supplementary-Colors, Photoshoot, Illustration"
 
   n_prompt:
-    - "ng_deepnegative_v1_75t, badhandv4, worst quality, low quality, normal quality, lowres, bad anatomy, bad hands, watermark, moles"
-    - "nsfw, ng_deepnegative_v1_75t,badhandv4, worst quality, low quality, normal quality, lowres,watermark, monochrome"
-    - "nsfw, ng_deepnegative_v1_75t,badhandv4, worst quality, low quality, normal quality, lowres,watermark, monochrome"
-    - "nude, nsfw, ng_deepnegative_v1_75t, badhandv4, worst quality, low quality, normal quality, lowres, bad anatomy, bad hands, monochrome, grayscale watermark, moles, people"
+    # - "ng_deepnegative_v1_75t, badhandv4, worst quality, low quality, normal quality, lowres, bad anatomy, bad hands, watermark, moles"
+    # - "nsfw, ng_deepnegative_v1_75t,badhandv4, worst quality, low quality, normal quality, lowres,watermark, monochrome"
+    # - "nsfw, ng_deepnegative_v1_75t,badhandv4, worst quality, low quality, normal quality, lowres,watermark, monochrome"
+    - "(embedding:FastNegativeV2:1.1), (embedding:ng_deepnegative_v1_75t:1.1), (embedding:badhandv4:1.1), wrinkles, deformed, unrealistic, worst quality, blurry, fuzzy, out of focus, low quality, out of frame, logo, signature, username, watermark, picture frame, frames, borderline, duplicate, error, ugly, blur, tiled, extra fingers, deformed hands, polydactyl:1.5"

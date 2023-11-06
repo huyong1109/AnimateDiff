@@ -121,7 +121,7 @@ class AnimationPipeline(DiffusionPipeline):
     def disable_vae_slicing(self):
         self.vae.disable_slicing()
 
-    def enable_sequential_cpu_offload(self, gpu_id=0):
+    def enable_sequential_cpu_offload(self, gpu_id=2):
         if is_accelerate_available():
             from accelerate import cpu_offload
         else:
