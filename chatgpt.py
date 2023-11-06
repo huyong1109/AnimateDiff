@@ -25,7 +25,7 @@ class ChatGPTBot(object):
     def __init__(self):
         super().__init__()
         # set the default api_key
-        openai.api_key = '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'
+        openai.api_key = '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'
         openai.api_base = 'http://openai.greatleapai.com/v1'
         self.system_prompt_story = """
             Examples of scene discription are
